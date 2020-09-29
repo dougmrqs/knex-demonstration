@@ -1,11 +1,9 @@
 require('dotenv').config();
 
-const express = require('express');
-const app = express();
+const app = require('./app');
 
 const routes = require('./routes');
 
-app.use(express.json());
 app.use(routes);
 
 // notFound
