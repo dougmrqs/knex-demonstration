@@ -14,6 +14,9 @@ module.exports = {
             return res.status(201).send();
         }
         catch (error) {
+            if (error.code === '23505') {
+                error.status = 409
+            }
             next(error);
         }
     },
