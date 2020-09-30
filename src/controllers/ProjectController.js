@@ -27,6 +27,7 @@ module.exports = {
             res.header('X-Total-Count', count['count'])
 
             const results = await query;
+            
             return res.json(results);
         }
         catch (error) {

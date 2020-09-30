@@ -1,3 +1,7 @@
-const knex = require('../../src/database');
+require('dotenv').config({
+    path: process.env.NODE_ENV === 'development' ? '.env.test' : '.env'
+  });
 
-knex.migrate.rollback({ all: true }).then(() => {console.log('done')});
+  
+console.log(process.env.NODE_ENV);
+console.log(process.env.DB_URL);

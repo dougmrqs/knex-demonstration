@@ -6,6 +6,9 @@ This project addresses _migrations_, _seeds_, _relationship_ between tables and 
 It is based on the Rocketseat's _Masterclass #13_ as seen on YouTube:
 https://www.youtube.com/watch?v=U7GjS3FuSkA
 
+### NOTES
+Tests are currently running one file at a time. Look at the { "scripts": { "test": .... } }} section in package.json.
+
 
 ### Knex cheat sheet
 
